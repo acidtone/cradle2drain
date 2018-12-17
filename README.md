@@ -1,4 +1,4 @@
-# cradle2drain
+# Cradle to Drain
 A half-letter sized pinball zine for players looking to work on fundamentals. Included are imposed PDF files for printing on letter sized paper. Source AI and Indesign files are also included. See 'web' directory for a prototype webpage with video examples.
 
 ## Getting Started
