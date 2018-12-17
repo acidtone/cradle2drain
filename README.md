@@ -4,6 +4,7 @@ A half-letter sized pinball zine for players looking to work on fundamentals. In
 ## Getting Started
 
 There are only print and static web files in this repository. After downloading the repository, you'll find the following directories
+- fonts: Open Sans and Open Sans Condensed were used for layout and presentation;
 - pdf: print-ready files for printing the zine and cover (separate file);
 - print: source Indesign and Illustrator files for editing the base booklet;
 - web: the simple website that is published to gh-pages branch.
@@ -17,7 +18,9 @@ There are only print and static web files in this repository. After downloading 
 ## Built With
 
 * [Font Awesome](https://fontawesome.com) - misc icons used for presentation and diagrams
-* [Open Sans](https://fonts.google.com/specimen/Open+Sans) - Google Font used for presentation
+* [Open Sans](https://fonts.google.com/specimen/Open+Sans) - Used for layout and presentation
+* [Open Sans Condensed](https://fonts.google.com/specimen/Open+Sans+Condensed) - Uused for layout and presentation
+
 
 ## Authors
 
