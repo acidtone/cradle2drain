@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cradle to Drain - Pinball Fundamentals for the Competitive Player</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-size: 18px;
+      counter-reset: figures;
+    }
+    @media(min-width: 600px) {
+      body {
+        font-size: 3vw;
+      }
+    }
+    @media(min-width: 800px) {
+      body {
+        font-size: 24px;
+      }
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    main {
+      width: 80vw;
+      max-width: 1024px;
+      margin: auto;      
+    }
+
+    section {
+      /* not working */
+      -webkit-scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    article.figure, #intro article {
+      /* not working */
+      -webkit-scroll-snap-align: start;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    img {
+      margin-bottom: 2em;
+      width: 90vw;
+      max-width: 500px;
+    }
+    .figcaption {
+      font-style: italic;
+      text-align: center;
+    }
+    .figcaption::before {
+      counter-increment: figures;
+      content: "Figure " counter(figures) ": ";
+    }
+    #banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+    #banner {
+      background-image: url('images/skully.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20vh;
+      height: 100vh;
+      font-variant: small-caps;
+      justify-content: space-around;
+    }
+
+    #banner h1, #banner h2 {
+      text-align: center;
+    }
+
+    iframe {
+      width: 80vw;
+      max-width: 560px;
+    }
+
+  </style>
+</head>
+<body>
+  <a class="github-fork-ribbon" href="https://github.com/acidtone/cradle2drain" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  <header id="banner">
+    <h1>Cradle to Drain</h1>
+    <h2>Pinball Fundamentals<br><small>for the</small><br>Competitve Player</h2>
+  </header>
+  <aside>
+    <nav>
+      <ol>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#good-shots">Taking Good Shots</a>
+          <ul>
+            <li><a href="#eye-on-ball">Early and Late Shots</a></li>
+            <li><a href="#cradle-often">Cradle Often</a></li>
+            <li><a href="#dont-bash">Don't Bash the Ball</a></li>
+          </ul>
+        </li>
+        <li><a href="#flipper-skillz">Essential Flipper Skillz</a>
+          <ul>
+            <li><a href="#dead-flip">The Dead Flip</a></li>
+            <li><a href="#post-pass">The Post Pass</a></li>
+            <li><a href="#inlane-pass">The Inlane Pass</a></li>
+          </ul>
+        </li>
+        <li><a href="#defensive-tactics">Defensive Tactics</a>
+          <ul>
+            <li><a href="#orbit-drops">Defend Against Orbit Drops</a></li>
+            <li><a href="#sling-attacks">Defend Against Sling Attacks</a></li>
+            <li><a href="#outlane-drains">Defend Against Outlane Drains</a></li>
+          </ul>
+        </li>
+        <li><a href="#shot-selection">Shot Selection Strategies</a>
+          <ul>
+            <li><a href="#multiball">Mulitball-All-Day</a></li>
+            <li><a href="#stack-shots">Stack Your Shots</a></li>
+            <li><a href="#free-stuff">Collect Free Stuff</a></li>
+          </ul>
+        </li>
+        <li><a href="#cradle-challenge">Cradle Challenge</a></li>
+      </ol>
+    </nav>
+  </aside>
+  <main>
+    <section id="intro">
+      <article>
+        <header>
+          <h3>Introduction</h3>
+        </header>
+        <div>
+          <p>There’s a lot going on in a pinball machine.</p>
+          <p>Imbedded in the surface art is an endless stream of lights, ramps, bumbers and targets that can be over-whelming at first (*cough* always *cough*).</p>
+          <p>Even worse, everything appears random and success seems to have nothing to do with skill.</p>
+          <p>But fear not! There are fundamentals to be learned that will make your game better no matter what table you step up to. Read on!</p>
+        </div>
+        <img src="images/sling-terminology.svg" alt="Labelled Illustration of a Typical Pinball Sling">
+        <div class="figcaption">Your experience points are best invested in surviving the sling. Every modern table has a familiar layout.</div>
+      </article>
+    </section>
+    <section id="good-shots">
+      <article class="intro">
+        <header>
+          <h3>Taking Good Shots</h3>
+        </header>
+        <div>
+          <p>The point of pinball is making great shots. For now, we’ll settle for taking (attempting) good ones. The following principles apply to all shots, regardless of the target.</p>
+          <p><strong>Remember:</strong> make it or miss it, the ball will come back to you (if you don’t drain) by either an inlane or sling feed. Cradle if you can or take a shot if you’re in control. Survive the next feed and repeat.</p>
+          <p>Keep pushing that rock, Sisyphus.</p>
+        </div>
+      </article>
+      <article id="eye-on-ball" class="figure">
+        <header>
+          <h4>Early and Late Shots</h4>
+        </header>
+        <img src="images/eye-on-ball.svg" alt="Illustration of Early and Late Shots">
+        <div class="figcaption">Zero in on where the ball should be on the flipper when you shoot. Don’t look up too soon (i.e. don’t lead the ball). Stalk the ball until the moment you shoot. It’s the only way to correctly adjust for your next attempt.</div>
+      </article>
+      <article id="cradle-often" class="figure">
+        <header>
+          <h4>Cradle Often</h4>
+        </header>
+        <img src="images/cradle.svg" alt="Illustration of a Ball Cradle">
+        <div class="figcaption">The cradle is the highest level of control available in the game. It’s a haven of sipped drinks and quiet contemplation. Best of all, shots from a cradle release are slower and more consistent than from other feeds. The cradle is the third feed.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JWs8AIWwhnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+      <article id="dont-bash" class="figure">
+        <header>
+          <h4>Don't Bash the Ball</h4>
+        </header>
+        <img src="images/dont-bash.svg" alt="Illustration of a ball being bashed back into the playfield">
+        <div class="figcaption">Sending a ball immediately back into the playfield is called a live shot. They are low-percentage and the flipper will add speed to a ball you already don’t control. Try a cradle or dead flip (next section) instead.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kdFvrKJd3i8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+    </section>
+    <section id="flipper-skillz">
+      <article class="intro">
+        <header>
+          <h3>Essential Flipper Skillz</h3>
+        </header>
+        <div>
+          <p>There are about 10 core passes and catches in pinball but you don’t need most of them. These three are the least risky to use and are fairly simple (but not necessarily easy) to learn.</p>
+          <p>The purpose of these techniques is ball control. The table is designed to speed up the poor thing and send it down the drain. A slow ball is easier to keep in play and will lead to more accurate shots.</p>
+          <p>Control the ball or drain.</p>
+        </div>
+      </article>
+      <article id="dead-flip" class="figure">
+        <header>
+          <h4>The Dead Flip</h4>
+        </header>
+        <img src="images/dead-flip.svg" alt="Illustration of a Dead Flip">
+        <div class="figcaption">Not flipping is a simple way to kill the ball’s momentum and bounce it to the other flipper. The hardest part is remembering to do it but be prepared to look like an idiot if you drain.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5LYmvpV57gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </article>
+      <article id="post-pass" class="figure">
+        <header>
+          <h4>The Post Pass</h4>
+        </header>
+        <img src="images/post-pass.svg" alt="Illustration of a Post Pass">
+        <div class="figcaption">Sometimes you end up in the wrong cradle. Try a post pass: an extreme backhand shot into the lower sling post. This won’t work on some tables but it’s great when it’s an option.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zv9veT8DFFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+      <article id="inlane-pass" class="figure">
+        <header>
+          <h4>The Inlane Pass</h4>
+        </header>
+        <img src="images/inlane-pass.svg" alt="Illustration of a an Inlane Pass">
+        <div class="figcaption">Take note of the ball’s speed when it enters an inlane; shot accuracy plummets the faster it’s moving. For bullets, try raising the flipper for a pass to the other side for a cradle or slower (higher-percentage) shot.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hIopgJyCixk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+    </section>
+    <section id="defensive-tactics">
+      <article class="intro">
+        <header>
+          <h3>Defensive Tactics</h3>
+        </header>
+        <div>
+          <p>Every ball saved is an extra ball.</p>
+          <p>There’s no win-condition in pinball. You lose when the ball reaches the bottom of the table. Your job is to keep it away from the drain as long as you can.</p>
+          <p>If the ball is anywhere near the sling, the same-side flipper should be up to block the drain.</p>
+          <p>If the ball is anywhere near an outlane, your only hope is to move the machine.</p>
+        </div>
+      </article>
+      <article id="orbit-drops" class="figure">
+        <header>
+          <h4>Defend Against Orbit Drops</h4>
+        </header>
+        <img src="images/close-drain.svg" alt="Illustration of an Orbit Drop">
+        <div class="figcaption">Maybe the sling will fire, maybe it won’t.</div>
+      </article>
+      <article id="sling-attacks" class="figure">
+        <header>
+          <h4>Defend Against Sling Attacks</h4>
+        </header>
+        <img src="images/sling-defense.svg" alt="Illustration of a Sling Atack">
+        <div class="figcaption">Slings deflect balls at crazy angles and at high rates of speed.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4UaZqnv9tRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+      <article id="outlane-drains" class="figure">
+        <header>
+          <h4>Defend Against Outlane Drains</h4>
+        </header>
+        <img src="images/knock.svg" alt="Illustration of a ball arcing to an outlane">
+        <div class="figcaption">Nudge the bottom of the machine when a ball strikes an outlane post. Hopefully it bounces into the sling or inlane.</div>
+        <h5>Video Examples</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aYUWi2FBQgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+    </section>
+    <section id="shot-selection">
+      <article class="intro">
+        <header>
+          <h3>Shot Selection Strategies</h3>
+        </header>
+        <div>
+          <p>Which shots maximize scoring for the least risk?</p>
+          <p>Every table is different and the options are endless but here are some strategies that apply to most modern machines:</p>
+        </div>
+      </article>
+      <article id="multiball" class="figure">
+        <header>
+          <h4>Multiball-All-Day</h4>
+        </header>
+        <div class="description">
+          <p>Practice the shots needed for successful Multiball (MB) sessions. The ball save keeps you alive longer and the scoring can be juicy. Also: it looks f’ing cool.</p>
+          <p>Some common trademarks:</p>
+          <p>Lock Shots: There’s a shot to light a ball-lock and an- other to lock the ball (they’re sometimes the same shot). Locking x balls starts an x-ball MB, which ends when you have one ball left.</p>
+          <p>Jackpots and Supers: Lit arrows will show the jackpot shots during MB. Make enough jackpots and the super jackpot will light. Making this shot can score big; it’s usually the sum of all jackpots collected at that point.</p>
+          <p>Add-a-ball: Exactly what it says, except you also get all your balls back (plus one) and another ball save. This is often the  rst Mystery received during MB (see Collect Free Stuff).</p>
+        </div>
+      </article>
+      <article id="stack-shots" class="figure">
+        <header>
+          <h4>Stack Your Shots</h4>
+        </header>
+        <div class="description">
+          <p>Stack awards onto your shots for more scoring.</p>
+          <p>Modes: These are quests that increase scoring on select shots. You will often need to start your mode before you enter MB but shots can score twice (once for the JP and again for mode scoring).</p>
+          <p>Multipliers: 2x is double scoring, 3x is triple, etc. (either play eld, shot or bonus x). Every machine is different so finding them usually requires the game’s rulesheet or someone familiar with the table (preferably both).</p>
+          <p>Combos: Many tables encourage making two or more shots in a row for more scoring. Look for ramps with inlane feeds. Shots need to be made in quick succession so this is a time to lay off the cradles (a little).</p>
+        </div>
+      </article>
+      <article id="free-stuff" class="figure">
+        <header>
+          <h4>Collect Free Stuff</h4>
+        </header>
+        <div class="description">
+          <p>Some nice extras to be aware of:</p>
+          <p>Mystery: It’s often the award for shooting a scoop. Some tables have huge mystery awards. Find the shots to light and collect. Mysteries are often critical to MB.</p>
+          <p>Inlane Lights: Many tables have selectable inlane lights for ball roll-overs. Complete the lights for an award ranging from lighting a mystery to crazy scoring.</p>
+          <p>Bonus: When you see your end-of-ball bonus, you’ve offcially drained. This is the first thing you lose when you tilt so be gentle if you have a big bonus saved up.</p>
+        </div>
+      </article>
+    </section>
+    <section id="cradle-challenge">
+      <article class="description">
+        <header>
+          <h3>Cradle Challenge</h3>
+        </header>
+        <div>
+          <p>Nothing ruins a hobby like practice and dedication.</p>
+          <p><strong>Objective:</strong> Successfully cradle the ball 30 times in three consecutive balls.</p>
+          <ul>
+            <li>Ball must be motionless(ish) to count.</li>
+            <li>A successful dead flip into a cradle scores two cradles (a 2x multiplier)!</li>
+            <li>Each successful post pass scores one cradle. Yes, you can post pass 30 times and not take a shot to pass this challenge (like a monster).</li>
+          </ul>
+          <p><strong>Pro-tips:</strong></p>
+          <ul>
+            <li>Dead flips high up on the flipper tend to drain fast. Try raising the flipper for a simple catch instead.</li>
+            <li>Find a training partner to keep you honest and help with the paperwork. They can be of any skill level but they should be fun to hang with. Practice drills can be a tunnel with no light.</li>
+            <li>It’s diffcult to post pass on some tables. Studies show they’re haunted by someone you’ve wronged. Find a favourite machine possessed by the aunt that loaned you rent that one time.</li>
+          </ul>
+          <p>Award for Completion: Level 1 Baller achieved! Tell your friends.</p>
+        </div>
+      </article>
+    </section>
+    <section id="glossary">
+      <header>
+        <h3>Talk the Talk</h3>
+      </header>
+      <div>
+        <p>Some terminology and sayings to make you look pre- tentious in front of your friends and family:</p>
+        <dl>
+          <dt>Ball save</dt>
+          <dd>A timed free ball in case you drain. Like in college, this is a time for risky moves and questionable experimentation. Pro-tip: use it to attempt the risky shots you need or to get the feel of a new table.</dd>
+          <dt>&quot;Bone in the Tank&quot;</dt>
+          <dd>Levi Nayman’s phrase for how much Bonus you have saved up. He’s a character</dd>
+          <dt>Callouts</dt>
+          <dd>The sound clips and dialogue played during a game. Tables licensed from movies and television shows are full of them.</dd>
+          <dt>Dig it out of the basement</dt>
+          <dd>It’s like a blue-collar Lazarus ball (see below). Skilled flippers can seem to defy fate by digging a ball out of the drain.</dd>
+          <dt>Double danger</dt>
+          <dd>The last warning a machine gives you before a tilt. It might even be too late for you.</dd>
+          <dt>Dry Shot</dt>
+          <dd>A shot with no awards or mulitpliers stacked onto it. They are usually not worth the risk.</dd>
+          <dt>Lazarus ball</dt>
+          <dd>When a dead ball innocently bounces out of the drain and onto the flippers.</dd>
+          <dt>Power inlane</dt>
+          <dd>Remember the inlane pass? A power inlane is when the ball will either smack the drain or hit the sling, depending on your reflexes.</dd>
+          <dt>Shatzing the</dt>
+          <dd>An extreme forehand into the op- posite inlane. Named after Neil Shatz, a top least suck- iest player. See Shatz save.</dd>
+          <dt>Shatz Save</dt>
+          <dd>A modi ed slap save that drives the ball into the opposite inlane. See Slap save.</dd>
+          <dt>Skill shot</dt>
+          <dd>An award for plunging the ball with prcise force and/or timing. There are often increasing levels of di culty such as super skill shots or super secret skill shots.</dd>
+          <dt>Slap save</dt>
+          <dd>A desparate  ip with a table nudge to save a ball going straight down the middle (SDTM).</dd>
+          <dt>Tilting out</dt>
+          <dd>When you move the table too much, the table kills the flippers and takes away your Bonus (among other things). See Double danger.</dd>
+          <dt>Video mode</dt>
+          <dd>A mini video game played on the machine’s display. Some are more vital to success than others.</dd>
+          <dt>Zero-point ball save</dt>
+          <dd>A rare ball save that persists until you score your first point (a.k.a. playfield validation). As a species, we don’t get to say zero-point ball save enough.</dd>
+        </dl>
+      </div>
+    </section>  
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+</html>
