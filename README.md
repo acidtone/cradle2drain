@@ -10,8 +10,6 @@ There are only print and static web files in this repository. After downloading 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 - Illustrator
 - Indesign
 - PDF Reader
